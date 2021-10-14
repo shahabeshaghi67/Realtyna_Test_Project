@@ -1,0 +1,11 @@
+
+
+{% for reservation in object_list %}
+<div> {{ forloop.counter }}.  
+        <div> Name: {{ reservation.name }} </div>
+        <div> Room: {{ reservation.room.number }} </div>
+        <div> Listing Owner: {{ reservation.room.listing_owner.name }} </div>
+        <div> Start: {{ reservation.start }} </div>
+        <div> End: {{ reservation.end }} </div>
+</div></br>
+{% endfor %}
